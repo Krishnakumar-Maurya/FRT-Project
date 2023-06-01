@@ -1,0 +1,246 @@
+* {
+    margin: 0;
+    padding: 0;
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    box-sizing: border-box;
+    scroll-behavior: smooth;
+}
+body {
+    background: rgb(63, 62, 62);
+    height: 100vh;
+    background-size: cover;
+    background-position: center;
+}
+header {
+    width: 100%;
+    height: 120px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 30px 10%;
+    /* background: rgba(0,0,0,0.1); */
+}
+.logo img {
+    /* height: 110px; */
+    height: 7rem;
+    /* width: 110px; */
+    width: 7rem;
+    cursor: pointer;
+}
+nav li {
+    display: inline-block;
+    list-style: none;
+    padding: 0px 20px;
+}
+a {
+    font-size: 25px;
+    font-weight: 500;
+    color: white;
+    text-decoration: none;
+    cursor: pointer;
+}
+
+nav li a:hover {
+    color: #fd5e53;
+    transition: all 0.4s ease 0s;
+}
+
+/* ----------------------------------------------------------------- */
+
+.container {
+    /* border: 2px solid green; */
+    width: 100%;
+    height: 80vh;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 3%;
+}
+
+.aside {
+    /* border: 2px solid yellow; */
+    width: fit-content;
+}
+.aside img {
+    /* height: 500px; */
+    height: 30rem;
+    /* width: 500px; */
+    width: 30rem;
+}
+
+/* ----------------------------------------------------- */
+
+.typingArea {
+    /* border: 2px solid red; */
+    width: max-content;
+}
+
+.typingArea .input-field{
+    opacity: 0;
+    z-index: -999;
+    position: absolute;
+}
+
+#content {
+    font-size: 2.3rem;
+    line-height: 1.2;
+    width: 55rem;
+    height: 30rem;
+    color: rgb(170, 170, 170);
+    /* text-align: justify;
+    word-break: break-all; */
+}
+
+#content::-webkit-scrollbar{
+  width: 0;
+}
+
+#content span{
+  position: relative;
+}
+
+#content span.correct{
+  color: #56964f;
+}
+#content span.incorrect{
+  color: #cb3439;
+  border-radius: 4px;
+}
+#content span.active{
+  color: #17A2B8;
+}
+#content span.active::before{
+  position: absolute;
+  content: "";
+  height: 2px;
+  width: 100%;
+  bottom: 0;
+  left: 0;
+  opacity: 0;
+  border-radius: 5px;
+  background: #17A2B8;
+  animation: blink 1s ease-in-out infinite;
+}
+@keyframes blink{
+  50%{ 
+    opacity: 1; 
+  }
+}
+
+.result {
+  display: flex;
+}
+
+button{
+  outline: none;
+  border: none;
+  width: 6rem ;
+  color: #fff;
+  padding: 0.5rem 0;
+  font-size: 1rem;
+  cursor: pointer;
+  border-radius: 5px;
+  background: #17A2B8;
+  margin-left: 1.5rem;
+  transition: transform 0.3s ease;
+}
+.result button:active{
+  transform: scale(0.97);
+}
+.result .result-details{
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  width: calc(100% - 140px);
+  justify-content: space-between;
+}
+.result-details li{
+  color: white;
+  display: flex;
+  height: 20px;
+  list-style: none;
+  position: relative;
+  align-items: center;
+}
+.result-details li:not(:first-child){
+  padding-left: 22px;
+  border-left: 1px solid #bfbfbf;
+}
+.result-details li p{
+  font-size: 19px;
+}
+.result-details li span{
+  display: block;
+  font-size: 20px;
+  margin-left: 10px;
+}
+li span b{
+  font-weight: 500;
+}
+li:not(:first-child) span{
+  font-weight: 500;
+}
+
+/* -----------------------Footer--------------------------- */
+.footer {
+  /* border: 2px solid red; */
+  background: rgb(55, 55, 55);
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 0.5rem 5%;
+  margin-top: 2rem;
+}
+.foot {
+  /* border: 2px solid green; */
+  text-align: center;
+  width: 20%;
+  height: 200px;
+}
+.footerDetails {
+  font-size: 1.5rem;
+  color: #989898;
+}
+
+.footerIcons {
+  border: 1px solid #989898;
+  border-radius: 500px;
+  width: 2rem;
+  height: 2rem;
+}
+#locationIcon {
+  width: 3rem;
+  border: none;
+}
+#gmailIcon {
+  width: 3.5rem;
+  border: none;
+}
+#gmail {
+  color: #989898;
+  font-size: 1.1rem;
+}
+#location {
+  color: #989898;
+  font-size: 1.1rem;
+}
+.foot p {
+  color: #989898;
+  font-size: 1.1rem;
+}
+/* -----------------Copyright---------------------------- */
+
+#copyright {
+  display: flex;
+  justify-content: center;
+  align-items: center ;
+  margin: 1rem 0;
+}
+#copyright span {
+  color: white;
+  font-size: 1.2rem;
+}
+#copyright span span {
+  color: red;
+  font-size: 1.5rem;
+}
