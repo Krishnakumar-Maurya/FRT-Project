@@ -7,6 +7,12 @@
 
 ![ss2](https://github.com/Krishnakumar-Maurya/FRT-Project/assets/94703314/783882ed-26ad-48d2-81cd-ba80fe75fe65)
 
+
+
+![ss3](https://github.com/Krishnakumar-Maurya/FRT-Project/assets/94703314/61b4f0ef-c8df-484d-94c1-3b35a3aba7fa)
+
+
+
 #--------------------------------------------------------------------------------------------------------
 # Demo Video Link
 https://drive.google.com/file/d/1-t5CnvwHHFktwGpy5YF_YXqtQ2k-h8bb/view?usp=drivesdk
